@@ -12,10 +12,12 @@ pipeline {
                 bat 'mvn test'
             }
         }
-       post {
+       
+    }
+
+    post {
             always {
                 junit 'target/surefire-reports/*.xml'
             }
         }
-    }
 }
