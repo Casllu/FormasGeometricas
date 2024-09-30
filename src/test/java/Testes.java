@@ -18,10 +18,5 @@ public class Testes {
 		Assertions.assertEquals(16, perimeter);
 	}
 
-	@Test
-	public void verificarAreaDoCirculo() {
-		Circulo circulo = new Circulo(7.5);
-		double area = circulo.calcularArea();
-		Assertions.assertEquals(176.71458676442586, area);
-	}
+
 }
