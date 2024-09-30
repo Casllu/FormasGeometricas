@@ -1,3 +1,4 @@
+import org.example.etidades.Circulo;
 import org.example.etidades.Retangulo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -15,5 +16,12 @@ public class Testes {
 		Retangulo retangle = new Retangulo();
 		double perimeter = retangle.perimeter(5, 3);
 		Assertions.assertEquals(16, perimeter);
+	}
+
+	@Test
+	public void verificarAreaDoCirculo() {
+		Circulo circulo = new Circulo(7.5);
+		double area = circulo.calcularArea();
+		Assertions.assertEquals(176.71458676442586, area);
 	}
 }
